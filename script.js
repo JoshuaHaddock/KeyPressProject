@@ -3,6 +3,18 @@
 //         button.Audio.play(boom.wav)
 //  })
 
+document.getElementById('btn').onclick = function(){
+    //Getting button and listning for click
+    document.getElementById('audio').play();
+    //Utilizing the HTML Audio/Video DOM Reference to play audio/video
+    }
+    
+    //to play on the key A do this(using Jquery):
+    document.addEventListener('keydown', function(e) {
+      if(e.keyCode == 65){
+      document.getElementById('audio').play();
+      }
+    });
 
 const insert = document.getElementById('insert');
 const RenderCharacters  = keyData => {
@@ -20,19 +32,6 @@ const RenderCharacters  = keyData => {
     </div>`;
 };
 
-// document.addEventListener('keydown', function() {
-//     if (keyCode == 65) {
-//       document.getElementById('audio').play();
-//     }
-//   });
-//   if ("keyCode" == 65) {
-//     if(document.getElementById('audio').paused){
-//     document.getElementById('audio').play();
-//    }
-//    else{
-//     document.getElementById('audio').pause;
-//   }
-// };
 
 window.addEventListener('keydown', (event) => {
     RenderCharacters(event);
