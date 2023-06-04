@@ -19,9 +19,9 @@ body {
     border: 2px solid #000000f8;
     background-color: #810bc5;
     display: flex;
-    align-items: center;
+    align-items: column;
     font-size: 20px;
-    flex-direction: column;
+    flex-direction: center;
     margin: 1px;
     font-weight:lighter;
     min-width: 190px;
